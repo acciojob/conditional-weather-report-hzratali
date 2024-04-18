@@ -22,8 +22,6 @@ const App = () => {
       <div style={{ color: textColor }}>
         <p>
           <span>Temperature: {weatherInput.temperature}</span>
-        </p>
-        <p>
           <span>Conditions: {weatherInput.conditions}</span>
         </p>
       </div>
