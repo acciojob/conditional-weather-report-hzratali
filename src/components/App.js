@@ -7,7 +7,6 @@ const App = () => {
     conditions: "Sunny",
   });
   const [textColor, setTextColor] = useState("blue");
-
   useEffect(() => {
     // Set text color based on temperature threshold
     if (weatherInput.temperature > 20) {
@@ -22,9 +21,10 @@ const App = () => {
       {/* Do not remove the main div */}
       <div style={{ color: textColor }}>
         <p>
-          Temperature: {weatherInput.temperature}&nbsp;
-          {/* Ensure there's a space */}
-          Conditions: {weatherInput.conditions}
+          <span>Temperature: {weatherInput.temperature}</span>
+        </p>
+        <p>
+          <span>Conditions: {weatherInput.conditions}</span>
         </p>
       </div>
     </div>
